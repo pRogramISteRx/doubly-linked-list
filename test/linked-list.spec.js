@@ -91,7 +91,6 @@ describe('LinkedList', () => {
             
             list.insertAt(position, data);
             values.splice(position, 0, data);
-
             values.forEach((value, index) => {
                 expect(list.at(index)).to.equal(value);
             });
